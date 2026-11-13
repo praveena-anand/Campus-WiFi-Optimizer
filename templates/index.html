@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus WiFi Optimizer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h1>Campus WiFi Optimizer</h1>
+    
+    <label for="nodes">Enter Number of Buildings (Nodes):</label>
+    <input type="number" id="nodes" min="1" placeholder="e.g., 5">
+    
+    <button id="generateMatrix" onclick="generateMatrix()">Generate Distance Matrix</button>
+    <button onclick="randomizeDistances()">Randomize Distances</button>
+
+    <div id="matrixContainer"></div>
+
+    <button id="optimizeWifi" onclick="calculateMST()">Optimize WiFi</button>
+
+    <h2>Optimized WiFi Connection</h2>
+    <pre id="result"></pre>
+
+    <!-- Graph Visualization -->
+    <h2>Network Graph</h2>
+    <div id="graph" style="width: 100%; height: 400px;"></div>
+    <div id="totalDistance" style="margin-top: 20px; font-size: 16px; font-weight: bold;"></div>  <!-- Total weight container -->
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

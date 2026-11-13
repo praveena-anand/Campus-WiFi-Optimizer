@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #87CEFA; /* Light Sky Blue */
+}
+
+/* 3D Animated Heading - Centered with Black Color */
+h1 {
+    color: black; /* Changed to black */
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto; /* Centers it */
+}
+
+/* Input and Button Styling */
+input, button {
+    margin: 10px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Buttons with Smooth Hover Effects */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Glassmorphism Effect for Table */
+#matrixContainer {
+    margin-top: 20px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Table Cells */
+td, th {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+}
+
+/* Optimizer Connection Box (Output) */
+pre {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-top: 20px;
+}
